@@ -46,7 +46,7 @@ export default {
 .el-menu-item {
   width: 80px;
   height: 50px;
-  font-size: 15px;
+  font-size: 17px;
   color: rgb(133, 133, 149);
 }
 
@@ -54,5 +54,7 @@ export default {
 .el-menu--horizontal > .el-menu-item.is-active {
   border-bottom: none;
   border-top: 4px solid #409eff;
+  color: rgb(31, 31, 31);
+  font-weight: 700;
 }
 </style>
