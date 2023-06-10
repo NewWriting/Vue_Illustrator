@@ -38,17 +38,18 @@ export default {
 }
 
 /* 调整分类栏子项的大小 */
-.el-menu-item {
+.el-menu.el-menu--horizontal .el-menu-item {
   width: 80px;
   height: 50px;
   font-size: 17px;
 }
 
+/* 消除未激活状态子项的下边框 */
 .el-menu--horizontal > .el-menu-item {
   border-bottom: none;
 }
 
-/* 消除分类栏子项的下边框，添加上边框，实现滑动效果 */
+/* 消除分类栏激活时子项的下边框，添加上边框，实现滑动效果 */
 .el-menu--horizontal > .el-menu-item.is-active {
   border-bottom: none;
   border-top: 4px solid #409eff;
