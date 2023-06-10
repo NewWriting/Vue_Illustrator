@@ -4,7 +4,6 @@
       :default-active="activeIndex"
       class="el-menu-demo"
       mode="horizontal"
-      @select="handleSelect"
     >
       <el-menu-item index="1">主页</el-menu-item>
       <el-menu-item index="2">插画</el-menu-item>
@@ -22,11 +21,7 @@ export default {
       activeIndex: '1',
     }
   },
-  methods: {
-    handleSelect(key, keyPath) {
-      console.log(key, keyPath)
-    },
-  },
+  methods: {},
 }
 </script>
 
@@ -47,14 +42,16 @@ export default {
   width: 80px;
   height: 50px;
   font-size: 17px;
-  color: rgb(133, 133, 149);
+}
+
+.el-menu--horizontal > .el-menu-item {
+  border-bottom: none;
 }
 
 /* 消除分类栏子项的下边框，添加上边框，实现滑动效果 */
 .el-menu--horizontal > .el-menu-item.is-active {
   border-bottom: none;
   border-top: 4px solid #409eff;
-  color: rgb(31, 31, 31);
   font-weight: 700;
 }
 </style>
