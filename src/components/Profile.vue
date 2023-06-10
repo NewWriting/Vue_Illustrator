@@ -11,7 +11,7 @@
       <!-- 关注栏 -->
       <div class="subscribe">
         <div class="one">
-          <h2 v-text="illustator"></h2>
+          <h2 v-text="illustrator"></h2>
           <div>
             <button v-text="isFollow"></button>
           </div>
@@ -24,7 +24,7 @@
     </div>
     <!-- 下半部分的具体资料 -->
     <div class="concrete-data">
-      <div class="loaction"><span>日本</span><span>京都</span></div>
+      <div class="location"><span>日本</span><span>京都</span></div>
       <div class="socialMedia"></div>
       <div class="signature">
         <span>厚塗りをのんびりと頑張ってます</span>
@@ -39,7 +39,7 @@ export default {
   name: 'Profile',
   data() {
     return {
-      illustator: 'Yuqi',
+      illustrator: 'Yuqi',
       isFollow: '已关注',
       followNumber: 583,
     }
@@ -144,24 +144,24 @@ export default {
   height: 100px;
 }
 
-.loaction,
+.location,
 .socialMedia,
 .signature {
   width: 100%;
 }
 
 /* 地理位置 */
-.loaction {
+.location {
   color: rgb(173, 173, 173);
   font-size: 15px;
 }
 
-.loaction::before {
+.location::before {
   content: '\e948';
   font-family: 'icomoon';
 }
 
-.loaction span {
+.location span {
   margin-left: 10px;
 }
 
