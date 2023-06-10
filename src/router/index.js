@@ -11,7 +11,8 @@ import Favorites from '../pages/Favorites'
 export default new VueRouter({
   routes: [
     {
-      path: '/HomePage',
+      // 默认首页就是主页
+      path: '/',
       component: HomePage,
     },
     {

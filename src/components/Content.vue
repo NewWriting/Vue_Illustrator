@@ -6,19 +6,9 @@
 </template>
 
 <script>
-// import HomePage from '../pages/Homepage'
-// import Illustrations from '../pages/Illustrations'
-// import Comics from '../pages/Comics'
-// import Favorites from '../pages/Favorites'
-
 export default {
   name: 'Content',
-  components: {
-    // HomePage,
-    // Illustrations,
-    // Comics,
-    // Favorites,
-  },
+  components: {},
   data() {
     return {}
   },
