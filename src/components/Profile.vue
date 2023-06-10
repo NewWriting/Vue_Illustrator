@@ -29,7 +29,7 @@
       <div class="signature">
         <span>厚塗りをのんびりと頑張ってます</span>
         <span> 【BOOTH】https://mifulu.booth.pm/</span>
-        <span class="checkInformations"> 查看个人资料</span>
+        <span class="checkInformation"> 查看个人资料</span>
       </div>
     </div>
   </div>
@@ -188,7 +188,7 @@ export default {
   justify-content: space-between;
 }
 
-.signature .checkInformations {
+.signature .checkInformation {
   cursor: pointer;
   color: rgb(133, 133, 149);
 }

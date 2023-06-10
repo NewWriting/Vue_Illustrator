@@ -72,6 +72,11 @@ a {
   text-decoration: none;
 }
 
+/* 高暂时设置为3000px */
+#app {
+  height: 3000px;
+}
+
 /* 导航栏组件和简介组件之间设置边距 */
 .separation {
   height: 200px;
