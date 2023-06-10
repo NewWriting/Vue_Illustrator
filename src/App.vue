@@ -42,13 +42,27 @@ export default {
   box-sizing: border-box;
 }
 
+/* 图表字体文件，注意路径问题，主要是fonts文件,应用到所有组件 */
+@font-face {
+  font-family: 'icomoon';
+  src: url('./assets/icomoon/fonts/icomoon.eot?yveltf');
+  src: url('./assets/icomoon/fonts/icomoon.eot?yveltf#iefix')
+      format('embedded-opentype'),
+    url('./assets/icomoon/fonts/icomoon.ttf?yveltf') format('truetype'),
+    url('./assets/icomoon/fonts/icomoon.woff?yveltf') format('woff'),
+    url('./assets/icomoon/fonts/icomoon.svg?yveltf#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 /* 统一全部组件按钮风格 */
 button {
   border-style: none;
   cursor: pointer;
 }
 
-/* 统一全部输入框风格 */
+/* 统一全部输入框风格，点击时没有轮廓 */
 input {
   outline: none;
 }
@@ -58,7 +72,7 @@ a {
   text-decoration: none;
 }
 
-/* 组件和组件之间设置上外边距 */
+/* 导航栏组件和简介组件之间设置边距 */
 .separation {
   height: 200px;
   margin-top: 80px;

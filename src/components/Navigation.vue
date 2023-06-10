@@ -51,20 +51,6 @@ export default {
 </script>
 
 <style scoped>
-/* 图表字体文件，注意路径问题，主要是fonts文件 */
-@font-face {
-  font-family: 'icomoon';
-  src: url('../assets/icomoon/fonts/icomoon.eot?yveltf');
-  src: url('../assets/icomoon/fonts/icomoon.eot?yveltf#iefix')
-      format('embedded-opentype'),
-    url('../assets/icomoon/fonts/icomoon.ttf?yveltf') format('truetype'),
-    url('../assets/icomoon/fonts/icomoon.woff?yveltf') format('woff'),
-    url('../assets/icomoon/fonts/icomoon.svg?yveltf#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
 /* 导航栏按钮统一风格,唯一一个按钮风格不同，单独的设置 */
 button {
   width: 50px;
