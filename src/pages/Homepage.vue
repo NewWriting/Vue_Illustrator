@@ -1,7 +1,11 @@
-<template></template>
+<template>
+  <div id="Homepage">这是主页内容</div>
+</template>
 
 <script>
-export default {}
+export default {
+  name: 'Homepage',
+}
 </script>
 
 <style scoped></style>

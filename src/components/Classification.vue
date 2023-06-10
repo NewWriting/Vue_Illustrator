@@ -1,14 +1,16 @@
 <template>
   <div id="Classification">
+    <!-- router	是否使用 vue-router 的模式，启用该模式会在激活导航时以 index 作为 path 进行路由跳转 -->
     <el-menu
+      :router="true"
       :default-active="activeIndex"
       class="el-menu-demo"
       mode="horizontal"
     >
-      <el-menu-item index="1">主页</el-menu-item>
-      <el-menu-item index="2">插画</el-menu-item>
-      <el-menu-item index="3">漫画</el-menu-item>
-      <el-menu-item index="4">收藏</el-menu-item>
+      <el-menu-item index="Homepage">主页</el-menu-item>
+      <el-menu-item index="Illustrations">插画</el-menu-item>
+      <el-menu-item index="Comics"> 漫画</el-menu-item>
+      <el-menu-item index="Favorites">收藏</el-menu-item>
     </el-menu>
   </div>
 </template>
