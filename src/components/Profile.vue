@@ -51,7 +51,7 @@ export default {
 <style scoped>
 /* 设置一个版心 */
 #Profile {
-  height: 300px;
+  height: 280px;
   padding: 0 300px;
 }
 

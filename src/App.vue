@@ -35,13 +35,6 @@ export default {
 </script>
 
 <style>
-/* 现将所有的内外边距置为0，并且边框、内边距不会撑大盒子 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* 图表字体文件，注意路径问题，主要是fonts文件,应用到所有组件 */
 @font-face {
   font-family: 'icomoon';
@@ -54,6 +47,13 @@ export default {
   font-weight: normal;
   font-style: normal;
   font-display: block;
+}
+
+/* 现将所有的内外边距置为0，并且边框、内边距不会撑大盒子 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* 统一全部组件按钮风格 */
@@ -72,10 +72,15 @@ a {
   text-decoration: none;
 }
 
-/* 高暂时设置为3000px */
-#app {
-  height: 3000px;
+/* 列表均无小圆点 */
+li {
+  list-style: none;
 }
+
+/* 高暂时设置为3000px */
+/* #app {
+  height: 3000px;
+} */
 
 /* 导航栏组件和简介组件之间设置边距 */
 .separation {

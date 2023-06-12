@@ -18,6 +18,6 @@ export default {
 
 <style scoped>
 #Content {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 </style>
