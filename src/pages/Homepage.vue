@@ -33,7 +33,7 @@
       </div>
       <!-- 查看全部 -->
       <div class="checkAll">
-        <div>查看全部</div>
+        <button>查看全部</button>
       </div>
     </div>
   </div>
@@ -249,16 +249,23 @@ export default {
   opacity: 0.8;
 }
 
-/* 查看全部按钮 */
+/* 查看全部 */
 .checkAll {
   width: 600px;
   height: 40px;
   margin: 100px auto;
-  background-color: rgb(30, 30, 30);
   border-radius: 20px;
-  text-align: center;
-  line-height: 40px;
+}
+
+.checkAll button {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: black;
   color: #fff;
-  cursor: pointer;
+}
+
+.checkAll button:active {
+  border: 3px solid rgb(166, 214, 246);
 }
 </style>
