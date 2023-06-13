@@ -217,7 +217,7 @@ export default {
 .show-works {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 /* 使相册照片项之间有固定间隔，并且保证组件之间的对齐 */

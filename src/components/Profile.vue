@@ -85,7 +85,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-  width: 1200px;
+  width: 95%;
   padding: 20px 0;
 }
 
