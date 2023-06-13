@@ -52,7 +52,7 @@ export default {
 /* 设置一个版心 */
 #Profile {
   height: 280px;
-  padding: 0 10%;
+  padding: 0 8%;
 }
 
 /* 上半部分基础资料 */

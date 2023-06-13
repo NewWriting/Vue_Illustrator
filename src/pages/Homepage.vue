@@ -125,7 +125,7 @@ export default {
 /* 精选内容 */
 
 .selective {
-  padding: 0 10%;
+  padding: 0 8%;
 }
 
 .selective p {
@@ -201,7 +201,7 @@ export default {
   justify-content: space-around;
   margin-top: 50px;
   /* 左右间距使用父组件宽度10%，更加具有灵活性 */
-  padding: 0 10%;
+  padding: 0 8%;
   background-color: rgb(245, 245, 245);
 }
 
@@ -217,6 +217,7 @@ export default {
 .show-works {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* 使相册照片项之间有固定间隔，并且保证组件之间的对齐 */
@@ -230,7 +231,7 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   /* 列表每一项给出margin正值达到固定间隔 */
-  width: 210px;
+  width: 200px;
   height: 300px;
   margin: 10px;
   border-radius: 10px;

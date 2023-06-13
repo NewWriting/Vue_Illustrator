@@ -32,7 +32,7 @@ export default {
 <style scoped>
 /* 控制element ui的分类框大小 */
 .el-menu {
-  margin-left: 10%;
+  margin-left: 8%;
   width: 320px;
 }
 
