@@ -200,7 +200,7 @@ export default {
   flex-direction: column;
   justify-content: space-around;
   margin-top: 50px;
-  /* 左右间距使用父组件宽度10%，更加具有灵活性 */
+  /* 左右间距使用父组件宽度8%，更加具有灵活性 */
   padding: 0 8%;
   background-color: rgb(245, 245, 245);
 }
@@ -218,11 +218,8 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-}
-
-/* 使相册照片项之间有固定间隔，并且保证组件之间的对齐 */
-.show-works {
   /* 列表整体使用margin负值进行扩展 */
+  /* 使相册照片项之间有固定间隔，并且保证组件之间的对齐 */
   margin: -10px;
 }
 
