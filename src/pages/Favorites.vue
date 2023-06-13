@@ -15,4 +15,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+#Favorites {
+  padding: 0 10%;
+}
+</style>
