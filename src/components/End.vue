@@ -24,7 +24,7 @@ export default {
 .footer {
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   width: 100%;
   height: 150px;
 }
