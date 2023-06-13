@@ -1,10 +1,17 @@
 <template>
-  <div id="Favorites">这是收藏内容</div>
+  <div id="Favorites">
+    <Artworks></Artworks>
+  </div>
 </template>
 
 <script>
+import Artworks from '../components/Artworks'
+
 export default {
   name: 'Favorites',
+  components: {
+    Artworks,
+  },
 }
 </script>
 

@@ -1,25 +1,25 @@
 <template>
   <div id="Illustrations">
-    <div class="illustration-header">
-      <h3>作品</h3>
-      <div><span>高级搜索</span></div>
-    </div>
-    <div>
-      <ul class="illustration-main">
-        <li v-for="image in images" :key="image.id">
-          <div>
-            <img :src="image.url" />
-          </div>
-          <span v-text="image.name"></span>
-        </li>
-      </ul>
-    </div>
+    <Artworks></Artworks>
+    <ul class="illustration-main">
+      <li v-for="image in images" :key="image.id">
+        <div>
+          <img :src="image.url" />
+        </div>
+        <span v-text="image.name"></span>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
+import Artworks from '../components/Artworks'
+
 export default {
   name: 'Illustrations',
+  components: {
+    Artworks,
+  },
   data() {
     return {
       images: [
@@ -242,23 +242,7 @@ export default {
 <style scoped>
 /* 版心确定 */
 #Illustrations {
-  padding: 0 8%;
-}
-
-/* 文字介绍 */
-.illustration-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.illustration-header div {
-  cursor: pointer;
-}
-
-.illustration-header div::before {
-  content: '\e9bd';
-  font-family: 'icomoon';
+  padding: 0 10%;
 }
 
 /* 插画主体，和主页基本一致 */

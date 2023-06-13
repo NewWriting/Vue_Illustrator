@@ -125,7 +125,7 @@ export default {
 /* 精选内容 */
 
 .selective {
-  padding: 0 8%;
+  padding: 0 10%;
 }
 
 .selective p {
@@ -200,8 +200,8 @@ export default {
   flex-direction: column;
   justify-content: space-around;
   margin-top: 50px;
-  /* 左右间距使用父组件宽度8%，更加具有灵活性 */
-  padding: 0 8%;
+  /* 左右间距使用父组件宽度10%，更加具有灵活性 */
+  padding: 0 10%;
   background-color: rgb(245, 245, 245);
 }
 
