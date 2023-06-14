@@ -9,7 +9,7 @@
         <img :src="instance" />
         <!-- 图片上Fanbox定期赞助信息 -->
         <div class="sponsor">
-          <h4>みふる的FANBOX</h4>
+          <h4>Yuqi的FANBOX</h4>
           <span>
             お空好きな創作絵描きです。全体公開では備忘録も兼ねて何か書ければなぁと思います（不定期）
           </span>
@@ -21,7 +21,7 @@
     <div class="BOOTH">
       <!-- BOOTH商品主题展现位置 -->
       <div class="main">
-        <h3>みふる的BOOTH</h3>
+        <h3>Yuqi的BOOTH</h3>
         <p>おそらやさん</p>
         <ul class="show-works">
           <li v-for="image in images" :key="image.id">
