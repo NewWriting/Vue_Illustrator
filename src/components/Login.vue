@@ -1,16 +1,35 @@
 <template>
   <div id="backgroud">
-    <div id="logo">mysystem</div>
+    <div id="logo"></div>
     <div id="login">
       <el-card class="box-card">
         <div id="form">
-          <el-input v-model="username" placeholder="请输入用户名"></el-input>
-          <el-input
-            placeholder="请输入密码"
-            v-model="password"
-            show-password
-          ></el-input>
-          <el-button type="primary">登录</el-button>
+          <div id="logo-box">
+            <div id="login-picture"></div>
+          </div>
+          <div id="username">
+            <el-input v-model="username" placeholder="请输入用户名"></el-input>
+          </div>
+          <div id="password">
+            <el-input
+              placeholder="请输入密码"
+              v-model="password"
+              show-password
+            ></el-input>
+          </div>
+          <div id="but">
+            <el-button round>注册</el-button>
+            <el-button @click="login" type="primary" round>登录</el-button>
+          </div>
+        </div>
+        <div id="other-box">
+          <div id="yan">用其他账号开始</div>
+          <form @submit.prevent="login">
+            <el-button id="apple" circle></el-button>
+            <el-button id="weibo" circle></el-button>
+            <el-button id="facebook" circle></el-button>
+            <el-button id="google" circle></el-button>
+          </form>
         </div>
       </el-card>
     </div>
@@ -22,10 +41,8 @@
 </template>
 
 <script>
-// import { nextTick } from 'vue/types/umd'
-
 export default {
-  name: 'Backgroud',
+  name: 'LoginGin',
   data() {
     return {
       username: '',
@@ -65,6 +82,14 @@ export default {
       this.time = hour + ':' + minute
       this.data = year + '/' + month + '/' + day
     },
+    login() {
+      if (this.username === 'admin' && this.password === '123456') {
+        alert('登录成功')
+        this.$router.push('/')
+      } else {
+        alert('用户名或密码错误')
+      }
+    },
   },
 }
 </script>
@@ -76,33 +101,22 @@ export default {
   width: 100%;
   top: 0;
   left: 0;
-  background-image: linear-gradient(90deg, cyan, purple);
+  background-color: white;
   background-size: 400%;
   animation: myanimation 10s forwards;
 }
-@keyframes myanimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 #logo {
-  color: aliceblue;
+  color: rgb(177, 192, 204);
   font-size: 25px;
   font-weight: 800px;
   text-transform: uppercase;
   position: absolute;
-  top: 15%;
-  left: 15%;
+  top: 5%;
+  left: 5%;
 }
 #login {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 38%;
 }
 #el-card {
@@ -112,9 +126,13 @@ export default {
   border-radius: 15px;
 }
 #form {
+  margin-bottom: 6px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.92);
+  width: 363px;
+  padding: 20px 0 20px;
+  border-radius: 4px;
   line-height: 60px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 #clock {
   color: aliceblue;
@@ -126,7 +144,55 @@ export default {
 #time {
   font-size: 100px;
 }
-#date {
+#data {
   font-size: 35px;
+}
+#login-picture {
+  display: inline-block;
+  width: 164px;
+  height: 64px;
+  background-image: url(../assets/Login/logo.svg);
+  background-size: contain;
+}
+#login-box {
+  margin-bottom: 30px;
+}
+#other-box {
+  margin-top: 14px;
+}
+#apple {
+  background-image: url(../assets/Login/apple.svg);
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#weibo {
+  background-image: url(../assets/Login/icon-weibo.svg);
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#facebook {
+  background-image: url(../assets/Login/icon-facebook.svg);
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#google {
+  background-image: url(../assets/Login/icon-google.svg);
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#other-box {
+  text-align: center;
+}
+#yan {
+  font-size: 14px;
+  padding-bottom: 20px;
 }
 </style>

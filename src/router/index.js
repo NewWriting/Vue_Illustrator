@@ -6,6 +6,7 @@ import HomePage from '../pages/Homepage'
 import Illustrations from '../pages/Illustrations'
 import Comics from '../pages/Comics'
 import Favorites from '../pages/Favorites'
+import Login from '../components/Login'
 
 // 创建并且暴露一个路由器
 export default new VueRouter({
@@ -30,6 +31,10 @@ export default new VueRouter({
     {
       path: '/Favorites',
       component: Favorites,
+    },
+    {
+      path: '/Login',
+      component: Login,
     },
   ],
 })

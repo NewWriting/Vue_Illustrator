@@ -13,6 +13,7 @@
       <Content></Content>
       <!-- 底部 -->
       <End></End>
+      <button @click="login">临时登录界面</button>
     </div>
   </div>
 </template>
@@ -34,6 +35,13 @@ export default {
     Content,
     End,
     Login,
+  },
+
+  methods: {
+    login() {
+      // 使用 Vue Router 实现页面跳转
+      this.$router.push('/Login')
+    },
   },
 }
 </script>
