@@ -13,7 +13,7 @@
         <div class="one">
           <h2 v-text="illustrator"></h2>
           <div>
-            <button v-text="isFollow"></button>
+            <button v-text="isFollow[index]" @click="setM"></button>
           </div>
         </div>
         <p>
@@ -36,16 +36,30 @@
 </template>
 <script>
 export default {
-  name: 'Profile',
+  name: "Profile",
   data() {
     return {
-      illustrator: 'Yuqi',
-      isFollow: '已关注',
+      illustrator: "Yuqi",
       followNumber: 583,
-    }
+      // 关注交换数据
+      isFollow: ["未关注", "已关注"],
+      index: 0,
+    };
   },
-  methods: {},
-}
+  methods: {
+    setM: function () {
+      this.index++;
+      if (this.index > 1) {
+        this.index = 0;
+      }
+      if (this.index === 0) {
+        this.followNumber--;
+      } else {
+        this.followNumber++;
+      }
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -118,8 +132,8 @@ export default {
 }
 
 .subscribe .one div:after {
-  content: '\ea82';
-  font-family: 'icomoon';
+  content: "\ea82";
+  font-family: "icomoon";
   cursor: pointer;
 }
 
@@ -157,8 +171,8 @@ export default {
 }
 
 .location::before {
-  content: '\e948';
-  font-family: 'icomoon';
+  content: "\e948";
+  font-family: "icomoon";
 }
 
 .location span {
@@ -168,17 +182,17 @@ export default {
 /* 社交媒体,推特和邮箱 */
 .socialMedia::before,
 .socialMedia::after {
-  font-family: 'icomoon';
+  font-family: "icomoon";
   font-size: 30px;
   cursor: pointer;
 }
 
 .socialMedia::before {
-  content: '\ea96';
+  content: "\ea96";
 }
 
 .socialMedia::after {
-  content: '\e945';
+  content: "\e945";
   margin-left: 10px;
 }
 
