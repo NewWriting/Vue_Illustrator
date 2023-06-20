@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <!-- 导航栏 -->
-    <Navigation></Navigation>
-    <!-- 分隔盒子 -->
-    <div class="separation"></div>
-    <!-- 简介 -->
-    <Profile></Profile>
-    <!-- 分类栏 -->
-    <Classification></Classification>
-    <!-- 主体内容 -->
-    <Content></Content>
-    <!-- 底部 -->
-    <End></End>
+    <div class="main">
+      <!-- 导航栏 -->
+      <Navigation></Navigation>
+      <!-- 分隔盒子 -->
+      <div class="separation"></div>
+      <!-- 简介 -->
+      <Profile></Profile>
+      <!-- 分类栏 -->
+      <Classification></Classification>
+      <!-- 主体内容 -->
+      <Content></Content>
+      <!-- 底部 -->
+      <End></End>
+    </div>
   </div>
 </template>
 
@@ -21,6 +23,7 @@ import Profile from './components/Profile.vue'
 import Content from './components/Content.vue'
 import Classification from './components/Classification.vue'
 import End from './components/End.vue'
+import Login from './components/Login.vue'
 
 export default {
   name: 'App',
@@ -30,6 +33,7 @@ export default {
     Classification,
     Content,
     End,
+    Login,
   },
 }
 </script>

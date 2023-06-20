@@ -13,6 +13,10 @@ export default new VueRouter({
     {
       // 默认首页就是主页
       path: '/',
+      redirect: 'HomePage',
+    },
+    {
+      path: '/HomePage',
       component: HomePage,
     },
     {
